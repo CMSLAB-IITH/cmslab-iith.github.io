@@ -2,7 +2,7 @@
 
 **Computational Microstructure Modeling and Simulation**, part of **M³ Lab: Multiscale Modeling of Materials**.
 
-M³ Lab is jointly led by **Prof. Saswata Bhattacharya and Prof. Anuj Goyal**, IIT Hyderabad. The CμMS Group is led by Prof. Saswata Bhattacharya.
+M³ Lab is jointly led by **Prof. Saswata Bhattacharyya and Prof. Anuj Goyal**, IIT Hyderabad. The CμMS Group is led by Prof. Saswata Bhattacharyya.
 
 Website: https://cmslab-iith.github.io/
 
@@ -20,4 +20,4 @@ Local preview: `python3 build.py`, `python3 check_site.py`, then `python3 -m htt
 
 ## Sources
 
-Membership, lab hierarchy and supervision reflect Saswata Bhattacharya's corrections. Research topics and thesis years come from the supplied CV. Publication and profile links identify sources. Portrait provenance is retained in `data/group.json`. Photographs and institutional logos retain their respective owners' rights.
+Membership, lab hierarchy and supervision reflect Saswata Bhattacharyya's corrections. Research topics and thesis years come from the supplied CV. Publication and profile links identify sources. Portrait provenance is retained in `data/group.json`. Photographs and institutional logos retain their respective owners' rights.

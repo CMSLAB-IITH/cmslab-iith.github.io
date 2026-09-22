@@ -1,10 +1,10 @@
 # Updating the CμMS group website
 
-The site belongs to the CμMS Group within **M³ Lab (Multiscale Modeling of Materials)**. M³ Lab is jointly led by Prof. Saswata Bhattacharya and Prof. Anuj Goyal, IIT Hyderabad.
+The site belongs to the CμMS Group within **M³ Lab (Multiscale Modeling of Materials)**. M³ Lab is jointly led by Prof. Saswata Bhattacharyya and Prof. Anuj Goyal, IIT Hyderabad.
 
 ## Access
 
-Use your own GitHub account. Ask Prof. Saswata Bhattacharya to add your GitHub username with **Write** access to this repository. Accept the GitHub invitation before editing. No shared password is needed.
+Use your own GitHub account. Ask Prof. Saswata Bhattacharyya to add your GitHub username with **Write** access to this repository. Accept the GitHub invitation before editing. No shared password is needed.
 
 ## For existing repository administrators: add members
 
@@ -12,7 +12,7 @@ Use your own GitHub account. Ask Prof. Saswata Bhattacharya to add your GitHub u
 2. Open [repository Settings → Collaborators and teams](https://github.com/CMSLAB-IITH/cmslab-iith.github.io/settings/access).
 3. Use **Add people**, select the exact account and grant **Write** access. Administrator access is unnecessary for posting content.
 4. Ask the member to accept the invitation from GitHub. Share this guide with them.
-5. If GitHub requires organization-owner approval, contact Prof. Saswata Bhattacharya. Do not share login credentials.
+5. If GitHub requires organization-owner approval, contact Prof. Saswata Bhattacharyya. Do not share login credentials.
 
 Existing editors can also invite members through a repository team if the organization already uses one. Keep editing access limited to the intended group members.
 
