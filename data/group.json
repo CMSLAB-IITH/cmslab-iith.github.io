@@ -121,10 +121,10 @@
         {
           "name": "Mr. Saurav Singh Bisht",
           "initials": "SSB",
-          "url": "",
+          "url": "https://sites.google.com/view/sauravbisht",
           "note": "PhD student, IIT Bombay. Supervisor: Prof. M. P. Gururajan. External supervisor: Prof. Saswata Bhattacharya.",
-          "photo_source": "",
-          "remote_image": "",
+          "photo_source": "https://sites.google.com/view/cmegatiitb/people",
+          "remote_image": "https://sites.google.com/sitesv-images-rt/AMxu72vvuSzEKZ1He_JxpBmDl-k1e-yvyqNBRgzNHrdQat9hRgwffWh41yrSCy3dXxSXAV7rDpKkZd-apulMJDvRYiUlmcZ0YDK7y7Lc28lb58v4j2Al3H8tVvFnO1kOmvhJTsyNBJIl_PbB4sKRZSUTrL-Hz4gnn1xdtQN96KEfB02E1uh5hPnMjzp4828_1K6_AlegIj0Mzey6o1VcWM83_oVnD-mfXGYUXwBR_SxFr2s=w1280",
           "research": "Phase-field modeling of ferroelectric domain evolution using GPU computation.",
           "works": [
             {
@@ -132,7 +132,10 @@
               "url": "https://raicgc25.com/abstracts.pdf",
               "kind": "Conference abstract · 2025"
             }
-          ]
+          ],
+          "image": "/assets/images/group/mr-saurav-singh-bisht.jpg",
+          "link_label": "Homepage",
+          "photo_provenance": "Portrait linked to Saurav Singh Bisht’s named homepage on the CMEG IIT Bombay People page."
         },
         {
           "name": "Ms. Vaishnavi S. M.",
@@ -277,6 +280,39 @@
               "kind": "Paper · 2023"
             }
           ]
+        },
+        {
+          "name": "Mr. Saurav Shenoy",
+          "initials": "SS",
+          "note": "PhD candidate, Penn State University, USA, in the Chen Research Group.",
+          "url": "https://sites.psu.edu/chengroup/group-members/",
+          "link_label": "Penn State group profile",
+          "research": "Phase-field modeling of splitting instabilities in superalloys and contributions to microstructure simulation software.",
+          "works": [
+            {
+              "title": "Splitting Instability in Superalloys: A Phase-Field Study",
+              "url": "https://arxiv.org/abs/2401.13151",
+              "kind": "Preprint · 2024"
+            }
+          ],
+          "image": "/assets/images/group/mr-saurav-shenoy.jpg",
+          "photo_source": "https://sites.psu.edu/chengroup/group-members/",
+          "remote_image": "https://sites.psu.edu/chengroup/files/2023/11/Saurav-Shenoy-Chen-group-225x300.jpg"
+        },
+        {
+          "name": "Mr. A. Maruthi Indresh",
+          "initials": "MI",
+          "note": "PhD student, Georgia Institute of Technology, USA.",
+          "url": "",
+          "research": "Accelerating coupled phase-field simulations using generative adversarial networks.",
+          "works": [
+            {
+              "title": "Accelerated Solutions of Coupled Phase-Field Problems using Generative Adversarial Networks",
+              "url": "https://arxiv.org/abs/2211.12084",
+              "kind": "Preprint · 2022"
+            }
+          ],
+          "affiliation_provenance": "Current PhD affiliation supplied by Saswata Bhattacharya; name spelling follows his CV and the linked coauthored paper."
         }
       ]
     },
