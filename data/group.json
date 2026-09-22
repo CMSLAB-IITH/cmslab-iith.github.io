@@ -1,4 +1,26 @@
 {
+  "advisers": [
+    {
+      "name": "Prof. T. A. Abinandanan",
+      "initials": "TAA",
+      "note": "Indian Institute of Science, Bengaluru",
+      "role": "PhD adviser",
+      "homepage": "https://materials.iisc.ac.in/~abinand/",
+      "institute_profile": "https://materials.iisc.ac.in/faculty-list",
+      "institute_url": "https://iisc.ac.in/",
+      "research": "His guidance established the foundation of Prof. Saswata Bhattacharya’s work in phase-field modeling, microstructural evolution and elastic stress effects."
+    },
+    {
+      "name": "Prof. Long-Qing Chen",
+      "initials": "LQC",
+      "note": "Pennsylvania State University, USA",
+      "role": "Postdoctoral research adviser",
+      "homepage": "https://www.matse.psu.edu/directory/long-qing-chen",
+      "institute_profile": "https://pure.psu.edu/en/persons/long-qing-chen/",
+      "institute_url": "https://www.psu.edu/",
+      "research": "His mentorship shaped Prof. Saswata Bhattacharya’s approach to mesoscale computational materials science, phase-field methods and spectral microelasticity."
+    }
+  ],
   "sections": [
     {
       "id": "current",
