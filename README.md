@@ -1,4 +1,4 @@
-# CμS · Computational Microstructures & Simulations
+# CμS · Computational Microstructures Modeling and Simulations
 
 Independent group website at https://cmslab-iith.github.io/.
 

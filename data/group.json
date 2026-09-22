@@ -294,7 +294,8 @@
           "image": "/assets/images/group/prof-aloke-paul.jpg",
           "homepage": "https://sites.google.com/view/alokepaul/",
           "institute_profile": "https://materials.iisc.ac.in/faculty-list",
-          "institute_url": "https://iisc.ac.in/"
+          "institute_url": "https://iisc.ac.in/",
+          "research": "Experimental diffusion studies and measurements meet our PINN and numerical inverse methods, linking diffusion profiles to composition-dependent transport properties."
         },
         {
           "name": "Prof. Rajdip Mukherjee",
@@ -306,7 +307,8 @@
           "image": "/assets/images/group/prof-rajdip-mukherjee.jpg",
           "homepage": "https://home.iitk.ac.in/~rajdipm/",
           "institute_profile": "https://iitk.ac.in/rajdip-mukherjee",
-          "institute_url": "https://iitk.ac.in/"
+          "institute_url": "https://iitk.ac.in/",
+          "research": "Rajdip’s perspective on thermal grooving meets our work on active parameter tracking, alongside shared interests in phase-field modeling and microstructure evolution."
         },
         {
           "name": "Prof. Akinori Yamanaka",
@@ -318,7 +320,8 @@
           "image": "/assets/images/group/prof-akinori-yamanaka.png",
           "homepage": "https://web.tuat.ac.jp/~yamanaka/",
           "institute_profile": "https://en.tuat-global.jp/researcher/e-4581-2012/",
-          "institute_url": "https://www.tuat.ac.jp/en/"
+          "institute_url": "https://www.tuat.ac.jp/en/",
+          "research": "Shared interests in phase-field modeling, materials simulation and data assimilation connect physical models with observations."
         },
         {
           "name": "Prof. Ranjith Ramadurai",
@@ -330,7 +333,20 @@
           "image": "/assets/images/group/prof-ranjith-ramadurai.jpg",
           "homepage": "https://people.iith.ac.in/ranjith/",
           "institute_profile": "https://msme.iith.ac.in/people/faculty/9",
-          "institute_url": "https://iith.ac.in/"
+          "institute_url": "https://iith.ac.in/",
+          "research": "Experimental ferroics and device physics meet our ferroelectric modeling, connecting domain evolution and electromechanical coupling with measured behavior."
+        },
+        {
+          "name": "Prof. Rajeev Ranjan",
+          "initials": "RR",
+          "note": "Indian Institute of Science, Bengaluru",
+          "homepage": "https://materials.iisc.ac.in/faculty/rajeev",
+          "institute_profile": "https://materials.iisc.ac.in/faculty-list",
+          "institute_url": "https://iisc.ac.in/",
+          "image": "/assets/images/group/prof-rajeev-ranjan.jpg",
+          "photo_source": "https://materials.iisc.ac.in/faculty-list",
+          "remote_image": "https://materials.iisc.ac.in/assets/images/faculty/rajeev.jpg",
+          "research": "Ferroelectric, piezoelectric and structure–property perspectives connect with our modeling of ferroic domains and electromechanical behavior."
         },
         {
           "name": "Prof. Subhradeep Chatterjee",
@@ -342,7 +358,8 @@
           "image": "/assets/images/group/prof-subhradeep-chatterjee.jpg",
           "homepage": "https://people.iith.ac.in/subhradeep/",
           "institute_profile": "https://iith.ac.in/msme/subhradeep/",
-          "institute_url": "https://iith.ac.in/"
+          "institute_url": "https://iith.ac.in/",
+          "research": "Phase transformations, materials processing and characterization connect with our phase-field studies of microstructure and nanoparticle morphology."
         },
         {
           "name": "Prof. M. P. Gururajan",
@@ -354,7 +371,8 @@
           "image": "/assets/images/group/prof-m-p-gururajan.jpg",
           "homepage": "https://sites.google.com/site/gurusofficialhomepage/",
           "institute_profile": "https://www.coeoge.iitb.ac.in/faculty/prof-m-p-gururajan",
-          "institute_url": "https://www.iitb.ac.in/"
+          "institute_url": "https://www.iitb.ac.in/",
+          "research": "Our ferroelectric modeling perspective meets Guru’s expertise in elastic stress effects. Shared experience in phase-field modeling gives us different ways to question and interpret the same physics."
         },
         {
           "name": "Prof. Ryoji Sahara",
@@ -366,7 +384,8 @@
           "image": "/assets/images/group/prof-ryoji-sahara.jpg",
           "homepage": "",
           "institute_profile": "https://samurai.nims.go.jp/profiles/sahara_ryoji?locale=en",
-          "institute_url": "https://www.nims.go.jp/eng/"
+          "institute_url": "https://www.nims.go.jp/eng/",
+          "research": "Computational structural materials and first-principles perspectives connect with our interests in microstructure, elasticity and multiscale modeling."
         },
         {
           "name": "Prof. Bernie Rolfe",
@@ -378,7 +397,8 @@
           "image": "/assets/images/group/prof-bernie-rolfe.jpg",
           "homepage": "",
           "institute_profile": "https://experts.deakin.edu.au/700-bernard-rolfe",
-          "institute_url": "https://www.deakin.edu.au/"
+          "institute_url": "https://www.deakin.edu.au/",
+          "research": "Manufacturing and materials-processing perspectives connect with our microstructure simulations and process–structure models."
         },
         {
           "name": "Prof. Sergiy Divinsky",
@@ -390,7 +410,8 @@
           "image": "/assets/images/group/prof-sergiy-divinsky.jpg",
           "homepage": "",
           "institute_profile": "https://www.uni-muenster.de/Physik.MP/Wilde/Mitarbeiter/ProfDivinskyi.shtml",
-          "institute_url": "https://www.uni-muenster.de/en/"
+          "institute_url": "https://www.uni-muenster.de/en/",
+          "research": "Diffusion measurements and transport physics connect with our efforts to infer and understand composition-dependent diffusion properties."
         },
         {
           "name": "Prof. Kishalay Mitra",
@@ -402,7 +423,8 @@
           "image": "/assets/images/group/prof-kishalay-mitra.jpg",
           "homepage": "https://sites.google.com/view/kishalaymitra/home",
           "institute_profile": "https://www.iith.ac.in/che/kishalay/",
-          "institute_url": "https://iith.ac.in/"
+          "institute_url": "https://iith.ac.in/",
+          "research": "Optimization and surrogate modeling connect with our phase-field simulations, process–structure relationships and physics-informed learning."
         },
         {
           "name": "Prof. Santu Rana",
@@ -414,7 +436,8 @@
           "image": "/assets/images/group/prof-santu-rana.jpg",
           "homepage": "",
           "institute_profile": "https://experts.deakin.edu.au/2644-santu-rana",
-          "institute_url": "https://www.deakin.edu.au/"
+          "institute_url": "https://www.deakin.edu.au/",
+          "research": "Machine learning and neural-operator methods connect with our phase-field models, bringing physical constraints into models of microstructure evolution."
         }
       ]
     }
