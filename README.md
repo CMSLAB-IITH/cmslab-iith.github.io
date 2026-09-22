@@ -1,20 +1,23 @@
-# CμS · Computational Microstructures Modeling and Simulations
+# CμMS Group · IIT Hyderabad
 
-Independent group website at https://cmslab-iith.github.io/.
+**Computational Microstructure Modeling and Simulation**, part of **M³ Lab: Multiscale Materials Modeling**.
 
-## Edit in VS Code
+M³ Lab is jointly led by **Prof. Saswata Bhattacharya and Prof. Anuj Goyal**, IIT Hyderabad. The CμMS Group is led by Prof. Saswata Bhattacharya.
 
-- `data/group.json`: names, affiliations, research, publications and profile links.
-- `assets/images/group/`: portraits. Keep the `image` path in each member entry consistent.
+Website: https://cmslab-iith.github.io/
+
+## For group members
+
+Read [the step-by-step editing guide](CONTRIBUTING.md) to add posters, group photos, news or profile updates through GitHub or VS Code. No local build is needed to publish: GitHub automatically builds and deploys changes to `main`.
+
+- `data/group.json`: members, collaborators and their work.
+- `data/activity.json`: posters, group photos and news.
+- `assets/uploads/`: poster PDFs and photographs.
 - `build.py`: page text and templates.
-- `assets/site.css`: layout, colors and thumbnail sizes.
+- `assets/site.css`: visual design.
 
-Run `python3 build.py` after editing the data or page templates. Commit the generated HTML together with the changes. GitHub Pages serves the root of the `main` branch. There are no server dependencies or JavaScript requirements.
-
-Preview: `python3 -m http.server 4175`, then visit http://localhost:4175/.
+Local preview: `python3 build.py`, `python3 check_site.py`, then `python3 -m http.server 4175`.
 
 ## Sources
 
-Member topics and thesis years come from the supplied CV; membership and joint supervision reflect Saswata Bhattacharya's corrections. Selected works link to their publications. Collaborator links distinguish personal/group homepages from institutional profiles and institute websites. A separate homepage is omitted where it could not be verified.
-
-Portrait provenance is retained in `data/group.json`. Photographs and institutional logos retain their respective owners' rights; no blanket relicensing is implied.
+Membership, lab hierarchy and supervision reflect Saswata Bhattacharya's corrections. Research topics and thesis years come from the supplied CV. Publication and profile links identify sources. Portrait provenance is retained in `data/group.json`. Photographs and institutional logos retain their respective owners' rights.
