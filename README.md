@@ -1,6 +1,6 @@
 # CμMS Group · IIT Hyderabad
 
-**Computational Microstructure Modeling and Simulation**, part of **M³ Lab: Multiscale Materials Modeling**.
+**Computational Microstructure Modeling and Simulation**, part of **M³ Lab: Multiscale Modeling of Materials**.
 
 M³ Lab is jointly led by **Prof. Saswata Bhattacharya and Prof. Anuj Goyal**, IIT Hyderabad. The CμMS Group is led by Prof. Saswata Bhattacharya.
 

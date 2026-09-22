@@ -1,6 +1,6 @@
 # Updating the CμMS group website
 
-The site belongs to the CμMS Group within **M³ Lab (Multiscale Materials Modeling)**. M³ Lab is jointly led by Prof. Saswata Bhattacharya and Prof. Anuj Goyal, IIT Hyderabad.
+The site belongs to the CμMS Group within **M³ Lab (Multiscale Modeling of Materials)**. M³ Lab is jointly led by Prof. Saswata Bhattacharya and Prof. Anuj Goyal, IIT Hyderabad.
 
 ## Access
 
