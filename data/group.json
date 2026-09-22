@@ -474,6 +474,39 @@
           "institute_profile": "https://experts.deakin.edu.au/2644-santu-rana",
           "institute_url": "https://www.deakin.edu.au/",
           "research": "Machine learning and neural-operator methods connect with our phase-field models, bringing physical constraints into models of microstructure evolution."
+        },
+        {
+          "name": "Prof. Abhik N. Choudhury",
+          "initials": "ANC",
+          "note": "Indian Institute of Science, Bengaluru",
+          "homepage": "https://materials.iisc.ac.in/faculty/abhik",
+          "institute_profile": "https://materials.iisc.ac.in/faculty-list",
+          "institute_url": "https://iisc.ac.in/",
+          "image": "/assets/images/group/prof-abhik-n-choudhury.jpg",
+          "photo_provenance": "MicroSim team page: https://microsim.co.in/team/",
+          "research": "Quantitative phase-field formulations, solidification and grand-potential solvers come together in our shared development of the open-source MicroSim suite."
+        },
+        {
+          "name": "Prof. Gandham Phanikumar",
+          "initials": "GP",
+          "note": "IIT Madras",
+          "homepage": "https://home.iitm.ac.in/gphani/",
+          "institute_profile": "https://mme.iitm.ac.in/innerfaculty.php?fname=Gandham+Phanikumar",
+          "institute_url": "https://www.iitm.ac.in/",
+          "image": "/assets/images/group/prof-gandham-phanikumar.jpg",
+          "photo_provenance": "MicroSim team page: https://microsim.co.in/team/",
+          "research": "Solidification, phase-field modeling, high-performance computing and ICME connect through our shared development of the open-source MicroSim suite."
+        },
+        {
+          "name": "Prof. Vaishali J. Shah",
+          "initials": "VJS",
+          "note": "Savitribai Phule Pune University",
+          "homepage": "https://microsim.co.in/team/",
+          "institute_profile": "https://scms.unipune.ac.in/people/",
+          "institute_url": "https://www.unipune.ac.in/",
+          "image": "/assets/images/group/prof-vaishali-j-shah.jpg",
+          "photo_provenance": "MicroSim team page: https://microsim.co.in/team/",
+          "research": "Computational materials modeling and MicroSim development, training and community use connect our groups through the open-source phase-field suite."
         }
       ]
     },
