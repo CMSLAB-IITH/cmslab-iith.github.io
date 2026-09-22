@@ -507,6 +507,17 @@
           "image": "/assets/images/group/prof-vaishali-j-shah.jpg",
           "photo_provenance": "MicroSim team page: https://microsim.co.in/team/",
           "research": "Computational materials modeling and MicroSim development, training and community use connect our groups through the open-source phase-field suite."
+        },
+        {
+          "name": "Prof. Surya R. Kalidindi",
+          "initials": "SRK",
+          "note": "Georgia Institute of Technology, USA",
+          "homepage": "https://www.me.gatech.edu/faculty/kalidindi",
+          "institute_profile": "https://www.mse.gatech.edu/people/surya-kalidindi",
+          "institute_url": "https://www.gatech.edu/",
+          "image": "/assets/images/group/prof-surya-kalidindi.png",
+          "photo_provenance": "Official Georgia Tech Woodruff School faculty profile: https://www.me.gatech.edu/faculty/kalidindi",
+          "research": "Microstructure informatics, crystal plasticity and materials knowledge systems complement our phase-field modeling and data-driven studies of process–structure–property relationships."
         }
       ]
     },
