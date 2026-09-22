@@ -476,6 +476,29 @@
           "research": "Machine learning and neural-operator methods connect with our phase-field models, bringing physical constraints into models of microstructure evolution."
         }
       ]
+    },
+    {
+      "id": "technical-support",
+      "title": "Lab systems and technical support",
+      "people": [
+        {
+          "name": "Mr. Mohammad Abdul Junaid",
+          "initials": "MAJ",
+          "note": "Senior Technical Superintendent, Materials Science and Metallurgical Engineering, IIT Hyderabad.",
+          "research": "Manages the shared computing resources of M³ Lab, including Thermo-Calc and student servers, and helps members access the resources they need. His expertise spans system administration, network security, cloud infrastructure and cybersecurity incident response.",
+          "url": "https://msme.iith.ac.in/people/staff",
+          "link_label": "IITH staff profile",
+          "image": "/assets/images/group/mr-mohammad-abdul-junaid.jpg",
+          "photo_source": "https://msme.iith.ac.in/people/staff",
+          "remote_image": "https://msme.iith.ac.in/api/media/file/Junaid-1.jpg",
+          "role_sources": [
+            "https://iith.ac.in/people/staff/",
+            "https://msme.iith.ac.in/assets/docs/MSME_Brochure.pdf",
+            "https://iith.ac.in/assets/newsletters/Issue-13.pdf"
+          ],
+          "role_provenance": "Current title and professional expertise verified against IITH sources. Shared lab and Thermo-Calc/student server responsibilities supplied by Prof. Saswata Bhattacharya."
+        }
+      ]
     }
   ]
 }
