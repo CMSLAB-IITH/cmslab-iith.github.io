@@ -16,6 +16,29 @@ Use your own GitHub account. Ask Prof. Saswata Bhattacharyya to add your GitHub 
 
 Organization base repository permissions must remain set to **None**. Access to private lab or personal repositories must be granted separately and explicitly. Do not share login credentials.
 
+## Add your personal poster page
+
+The guided helper creates one poster page for a member, adds its link directly below the member's name, validates the website, and opens a pull request. A later run can replace that page after explicit confirmation.
+
+1. Install [GitHub CLI](https://cli.github.com/), Python 3.10 or newer, and the Python editor dependency:
+
+   ```sh
+   python3 -m pip install -r requirements-editor.txt
+   ```
+
+2. For PPT or PPTX input, also install LibreOffice. PDF input does not require LibreOffice. If PyMuPDF is not installed, the helper can use Poppler's `pdftoppm` command for preview generation.
+3. Start from a clean clone and run:
+
+   ```sh
+   python3 add_member_showcase.py
+   ```
+
+4. Enter your GitHub username, your full name as it appears on the People page, the poster file path, poster title, and brief description. Harmless punctuation differences in the displayed name are accepted, and accessible preview text is generated automatically.
+5. Complete the official GitHub CLI browser login if requested. The helper verifies that the authenticated account matches the entered username and is an active member of the `website-editors` team. It never reads or stores your GitHub password or token.
+6. Review the pull request opened by the helper. After approval and merge to `main`, GitHub Pages publishes the new page automatically.
+
+PowerPoint files are converted to PDF, and only the PDF and optimized first-page preview are published. GitHub rejects individual files of 100 MiB or more, so the helper uses a 95 MiB safety limit. To create and validate files without authentication, branching, pushing, or opening a pull request, pass `--local-only`; run this only in a disposable clone or test copy because it updates the local site files.
+
 ## Easiest method: edit in your browser
 
 1. Open this repository on GitHub and press `.` to open its browser editor. You can also use VS Code on your computer.

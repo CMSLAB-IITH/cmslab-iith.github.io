@@ -1,0 +1,3 @@
+# Optional cross-platform PDF preview renderer used by add_member_showcase.py.
+# The script can also use the `pdftoppm` executable from Poppler when available.
+PyMuPDF>=1.24,<2
