@@ -346,7 +346,8 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         pr_url = commit_push_and_open_pr(branch, member["name"], slug)
         print(f"Pull request opened: {pr_url}")
-        print("The GitHub Pages site will deploy after the pull request is approved and merged into main.")
+        print("Wait for the required build check to pass, then merge your pull request into main.")
+        print("The GitHub Pages site will deploy automatically after the merge.")
         return 0
     except ShowcaseError as exc:
         print(f"Error: {exc}", file=sys.stderr)

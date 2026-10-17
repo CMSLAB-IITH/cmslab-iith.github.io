@@ -35,7 +35,9 @@ The guided helper creates one poster page for a member, adds its link directly b
 
 4. Enter your GitHub username, your full name as it appears on the People page, the poster file path, poster title, and brief description. Harmless punctuation differences in the displayed name are accepted, and accessible preview text is generated automatically.
 5. Complete the official GitHub CLI browser login if requested. The helper verifies that the authenticated account matches the entered username and is an active member of the `website-editors` team. It never reads or stores your GitHub password or token.
-6. Review the pull request opened by the helper. After approval and merge to `main`, GitHub Pages publishes the new page automatically.
+6. Review the pull request opened by the helper and wait for the required **Build and publish group website** check to pass. You may then merge your own pull request into `main`; GitHub Pages publishes the new page automatically.
+
+Independent approval is not required for website changes. Pull requests and the required build check remain mandatory so every change is recorded and validated before it reaches `main`.
 
 PowerPoint files are converted to PDF, and only the PDF and optimized first-page preview are published. GitHub rejects individual files of 100 MiB or more, so the helper uses a 95 MiB safety limit. To create and validate files without authentication, branching, pushing, or opening a pull request, pass `--local-only`; run this only in a disposable clone or test copy because it updates the local site files.
 
@@ -45,8 +47,8 @@ PowerPoint files are converted to PDF, and only the PDF and optimized first-page
 2. Upload photos to `assets/uploads/photos/` and poster PDFs to `assets/uploads/posters/`. Use short filenames without spaces, for example `group-meeting-2026-09.jpg`.
 3. Edit `data/activity.json`. Add an entry to `photos`, `posters` or `updates`, following the examples below. Separate multiple entries with commas.
 4. Create a branch with a short descriptive name, such as `add-group-meeting-photo`. Open Source Control, describe your change, commit it to that branch and open a pull request into `main`. Direct pushes to `main` are blocked.
-5. Wait for the “Build and publish group website” check to pass and for a maintainer to approve the pull request. If the check fails, open it to find and correct the missing file or invalid JSON error.
-6. Merge the approved pull request. The merge to `main` publishes the website automatically; confirm that the deployment completes in the Actions tab.
+5. Wait for the **Build and publish group website** check to pass. If the check fails, open it to find and correct the missing file or invalid JSON error.
+6. Merge your passing pull request. No independent reviewer is required. The merge to `main` publishes the website automatically; confirm that the deployment completes in the Actions tab.
 
 You do **not** need to run Python or edit generated HTML when using GitHub. The publishing workflow rebuilds the pages automatically.
 
