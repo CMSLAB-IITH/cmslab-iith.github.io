@@ -44,7 +44,15 @@
           "image": "/assets/images/group/mr-pushkar-pandit.jpeg",
           "photo_credit": "Photo from AI4SE talk, slide 2",
           "photo_provenance": "AI4SE_talk.pptx, slide 2, ppt/media/image6.jpeg; identity confirmed by Saswata Bhattacharyya on 22 September 2026.",
-          "link_label": "IISc student listing"
+          "link_label": "IISc student listing",
+          "showcase": {
+            "slug": "pushkar-a-pandit",
+            "title": "Research Area: Multicomponent Diffusion and Microstructural Evolution in High-Temperature Alloys",
+            "description": "My research focuses on understanding and predicting microstructural evolution in Ni-based superalloys through an integrated experimental and computational approach. I investigate the growth, coarsening, morphological instabilities, and splitting of γ′ precipitates in Ni–Al–X (X = Ta, Re) alloys, with particular emphasis on the effects of multicomponent diffusion, interfacial energy, lattice misfit, and elastic anisotropy. Experimental investigations involve diffusion-couple studies, high-temperature heat treatments, and quantitative microstructural characterization. I employ physics-informed neural networks (PINNs) to estimate composition-dependent multicomponent interdiffusion coefficients from experimental concentration profiles. Complementing these studies, I develop thermodynamically informed phase-field models based on the Kim–Kim–Suzuki (KKS) framework, incorporating coupled diffusion, CALPHAD thermodynamics, and coherency elasticity to simulate precipitate evolution. The broader objective is to establish quantitative relationships between alloy chemistry, diffusion kinetics, elastic interactions, and microstructural stability in high-temperature alloys.",
+            "alt": "First-page preview of \"Research Area: Multicomponent Diffusion and Microstructural Evolution in High-Temperature Alloys\" by Mr. Pushkar A. Pandit",
+            "pdf": "assets/uploads/posters/pushkar-a-pandit.pdf",
+            "preview": "assets/uploads/posters/pushkar-a-pandit-preview.jpg"
+          }
         },
         {
           "name": "Mr. Deepak Sharma",
