@@ -84,6 +84,10 @@ class LocalIntegrationTest(unittest.TestCase):
                 shutil.copy2(REPOSITORY / filename, root / filename)
             shutil.copytree(REPOSITORY / "data", root / "data")
             shutil.copytree(REPOSITORY / "assets", root / "assets")
+            group_path = root / "data" / "group.json"
+            group = json.loads(group_path.read_text())
+            helper.find_member(group, "Mr. Pushkar A. Pandit").pop("showcase", None)
+            group_path.write_text(json.dumps(group, ensure_ascii=False, indent=2) + "\n")
             sample = Path(temporary) / "sample-poster.pdf"
             make_sample_pdf(sample)
 
