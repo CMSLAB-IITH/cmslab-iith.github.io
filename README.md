@@ -17,6 +17,8 @@ python3 -m pip install -r requirements-editor.txt
 python3 add_member_showcase.py
 ```
 
+See [Pushkar's minimal poster showcase example](SHOWCASE_EXAMPLE.md) for a complete command that new members can adapt.
+
 The helper accepts PDF, PPT and PPTX files, verifies the contributor's `website-editors` membership through GitHub CLI, and opens a pull request. It never asks for a GitHub password or token.
 
 - `data/group.json`: members, collaborators and their work.
