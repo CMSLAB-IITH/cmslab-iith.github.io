@@ -6,13 +6,19 @@ root=Path(__file__).resolve().parent
 data=json.loads((root/'data/group.json').read_text())
 escape=html.escape
 
+def showcase_page_name(showcase):
+    return f'{showcase["slug"]}-poster.html'
+
 def link(url,label):
     return f'<a href="{escape(url,quote=True)}">{escape(label)} ↗</a>'
 
 def person_card(person,collaborator=False):
     image=person.get('image')
     portrait=f'<img src="{escape(image.lstrip("/"))}" alt="{escape(person["name"])}" width="64" height="72" loading="lazy">' if image else f'<span class="initials" aria-hidden="true">{escape(person["initials"])}</span>'
-    body=f'<h3>{escape(person["name"])}</h3><p class="affiliation">{escape(person.get("note",""))}</p>'
+    body=f'<h3>{escape(person["name"])}</h3>'
+    if person.get('showcase'):
+        body+=f'<a class="showcase-link" href="{escape(showcase_page_name(person["showcase"]),quote=True)}">View poster &amp; project →</a>'
+    body+=f'<p class="affiliation">{escape(person.get("note",""))}</p>'
     if person.get('research'): body+=f'<p>{escape(person["research"])}</p>'
     if person.get('works'):
         body+='<ul class="works">'+''.join(f'<li><small>{escape(work["kind"])}</small>{link(work["url"],work["title"])}</li>' for work in person['works'])+'</ul>'
@@ -28,7 +34,7 @@ def person_card(person,collaborator=False):
 
 def page(filename,title,content):
     nav=''.join(f'<a href="{url}"'+(' aria-current="page"' if filename==url else '')+f'>{label}</a>' for url,label in [('index.html','Home'),('people.html','People'),('research.html','Research'),('collaborators.html','Collaborators'),('group-life.html','Group life')])
-    document=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{title} · CμMS · IIT Hyderabad</title><meta name="description" content="Computational Microstructure Modeling and Simulation at IIT Hyderabad: phase-field modeling, elasticity, diffusion and physics-informed learning."><link rel="canonical" href="https://cmslab-iith.github.io/{'' if filename=='index.html' else filename}"><link rel="stylesheet" href="assets/site.css"><link rel="icon" href="assets/mark.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="identity" href="index.html"><span class="mark" aria-label="C mu M S">C<span>μ</span>MS</span><span>Computational Microstructure<br>Modeling and Simulation<small>PART OF M³ LAB · IIT HYDERABAD</small></span></a><nav aria-label="Main navigation">{nav}<a href="https://saswataiith.github.io/">Saswata’s website ↗</a></nav></header><main id="main">{content}</main><footer><div><span class="eyebrow">CμMS · IIT HYDERABAD</span><h2>Understanding how<br>microstructures evolve.</h2><p>Materials Science and Metallurgical Engineering<br>Indian Institute of Technology Hyderabad</p><div class="profile-links">{link('https://saswataiith.github.io/','Prof. Saswata Bhattacharyya')}{link('https://github.com/CMSLAB-IITH/cmslab-iith.github.io','Website source')}{link('https://github.com/CMSLAB-IITH/cmslab-iith.github.io/blob/main/CONTRIBUTING.md','Member editing guide')}</div></div><a href="https://iith.ac.in/"><img class="institute-logo" src="assets/images/iith-logo.png" alt="IIT Hyderabad" width="240"></a></footer></body></html>'''
+    document=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{escape(title)} · CμMS · IIT Hyderabad</title><meta name="description" content="Computational Microstructure Modeling and Simulation at IIT Hyderabad: phase-field modeling, elasticity, diffusion and physics-informed learning."><link rel="canonical" href="https://cmslab-iith.github.io/{'' if filename=='index.html' else filename}"><link rel="stylesheet" href="assets/site.css"><link rel="icon" href="assets/mark.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="identity" href="index.html"><span class="mark" aria-label="C mu M S">C<span>μ</span>MS</span><span>Computational Microstructure<br>Modeling and Simulation<small>PART OF M³ LAB · IIT HYDERABAD</small></span></a><nav aria-label="Main navigation">{nav}<a href="https://saswataiith.github.io/">Saswata’s website ↗</a></nav></header><main id="main">{content}</main><footer><div><span class="eyebrow">CμMS · IIT HYDERABAD</span><h2>Understanding how<br>microstructures evolve.</h2><p>Materials Science and Metallurgical Engineering<br>Indian Institute of Technology Hyderabad</p><div class="profile-links">{link('https://saswataiith.github.io/','Prof. Saswata Bhattacharyya')}{link('https://github.com/CMSLAB-IITH/cmslab-iith.github.io','Website source')}{link('https://github.com/CMSLAB-IITH/cmslab-iith.github.io/blob/main/CONTRIBUTING.md','Member editing guide')}</div></div><a href="https://iith.ac.in/"><img class="institute-logo" src="assets/images/iith-logo.png" alt="IIT Hyderabad" width="240"></a></footer></body></html>'''
     (root/filename).write_text(document)
 
 def heading(kicker,title,description):
@@ -45,6 +51,22 @@ people+='<section class="tinted"><span class="eyebrow">ACADEMIC LINEAGE</span><h
 for section in [item for item in data['sections'] if item['id'] in ('current', 'former', 'technical-support')]:
     people+=f'<section id="{section["id"]}"><h2>{section["title"]}</h2><div class="people">'+''.join(person_card(p) for p in section['people'])+'</div></section>'
 page('people.html','People',people)
+for section in data['sections']:
+    for person in section['people']:
+        showcase=person.get('showcase')
+        if not showcase:
+            continue
+        poster_content=(
+            heading('MEMBER POSTER',escape(showcase['title']),f'Presented by {escape(person["name"])}.')
+            +'<section class="poster-showcase">'
+            +f'<div class="poster-preview"><img src="{escape(showcase["preview"],quote=True)}" alt="{escape(showcase["alt"],quote=True)}"></div>'
+            +'<div class="poster-description">'
+            +f'<span class="eyebrow">ABOUT THIS WORK</span><h2>{escape(showcase["title"])}</h2>'
+            +f'<p>{escape(showcase["description"])}</p>'
+            +f'<div class="profile-links"><a href="{escape(showcase["pdf"],quote=True)}">View or download the complete poster (PDF) →</a><a href="people.html">Back to people →</a></div>'
+            +'</div></section>'
+        )
+        page(showcase_page_name(showcase),showcase['title'],poster_content)
 page('collaborators.html','Collaborators',heading('WORKING TOGETHER','Our <em>collaborators.</em>','Ideas grow when we explore them together, through experiments, theory and computation.')+'<section><div class="people collaborators">'+''.join(person_card(p,True) for p in data['sections'][2]['people'])+'</div></section><section class="tinted"><h2>When 1 + 1 &gt; 2.</h2><p>Collaboration begins when we bounce ideas off one another. Different experience can reveal an assumption we had overlooked or suggest a question we would not have asked alone. Even apparently similar expertise can lead to very different ways of seeing a problem.</p><p>The connections above are starting points, not fixed divisions of work. Our shared interests evolve through discussion, experiments and modeling. The aim is to develop ideas together that none of us would have reached in isolation.</p></section>')
 page('research.html','Research',heading('PHYSICS FIRST','Research &amp; <em>learning.</em>','Compact physical principles can generate remarkably rich microstructures. Our models connect those principles to observations and materials design.')+'<section>'+research+'</section><section class="tinted"><h2>Learn by exploring.</h2><p>Interactive laboratories, derivations and readable simulation examples accompany our research.</p><div class="profile-links">'+link('https://saswataiith.github.io/resources/','Learning resources')+link('https://saswataiith.github.io/publications/','Selected publications')+link('https://saswataiith.github.io/teaching/','Courses and TensorLab')+'</div></section>')
 activity=json.loads((root/'data/activity.json').read_text())
@@ -60,4 +82,4 @@ for key,title,empty in [('posters','Research posters','A space for our conferenc
         life+='</article>'
     life+='</section>'
 page('group-life.html','Group life',life)
-print('Built 5 static pages.')
+print('Built static pages.')

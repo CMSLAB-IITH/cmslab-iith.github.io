@@ -10,9 +10,19 @@ Website: https://cmslab-iith.github.io/
 
 Read [the step-by-step editing guide](CONTRIBUTING.md) to add posters, group photos, news or profile updates through GitHub or VS Code. No local build is needed to publish: GitHub automatically builds and deploys changes to `main`.
 
+To create or replace your personal poster page from a desktop clone, install the editor requirements and run the guided helper:
+
+```sh
+python3 -m pip install -r requirements-editor.txt
+python3 add_member_showcase.py
+```
+
+The helper accepts PDF, PPT and PPTX files, verifies the contributor's `website-editors` membership through GitHub CLI, and opens a pull request. It never asks for a GitHub password or token.
+
 - `data/group.json`: members, collaborators and their work.
 - `data/activity.json`: posters, group photos and news.
 - `assets/uploads/`: poster PDFs and photographs.
+- `add_member_showcase.py`: guided member poster-page and pull-request helper.
 - `build.py`: page text and templates.
 - `assets/site.css`: visual design.
 
