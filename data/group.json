@@ -196,7 +196,7 @@
           "remote_image": "",
           "note": "Postdoctoral researcher, Max Planck Institute for Sustainable Materials, Germany.",
           "linkedin": "https://de.linkedin.com/in/tushar-jogi-phd",
-          "research": "PhD, 2021, supervised by Saswata: developed a quantitative phase-field model and GPU simulations of precipitate growth, splitting, rafting and phase inversion in Ni-base superalloys. His thesis includes the elastic driving-force and sharp-interface derivations. He extended ParaDiS to include precipitate interactions and dislocation climb, and studied interfacial dislocation networks during creep.",
+          "research": "PhD, 2021, supervised by Saswata: developed a quantitative phase-field model and GPU simulations of precipitate growth, splitting, rafting and phase inversion in Ni-base superalloys. His thesis includes the elastic driving-force and sharp-interface derivations. His major contribution to ParaDiS was introducing inclusions to represent precipitates and their interactions with dislocations. He also incorporated dislocation climb and studied interfacial networks during creep. Tushar is now planning an official release of the inclusion module for OpenDiS, with Saswata as a collaborator.",
           "works": [
             {
               "title": "Interfacial dislocation network in precipitation strengthened alloys during creep: a discrete dislocation dynamics (DDD) study in three dimensions",
