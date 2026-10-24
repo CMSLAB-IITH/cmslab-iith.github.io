@@ -196,12 +196,17 @@
           "remote_image": "",
           "note": "Postdoctoral researcher, Max Planck Institute for Sustainable Materials, Germany.",
           "linkedin": "https://de.linkedin.com/in/tushar-jogi-phd",
-          "research": "PhD, 2021: process–microstructure–property relations in model nickel-base superalloys, including interfacial dislocation networks and elastic effects.",
+          "research": "PhD, 2021, supervised by Saswata: developed a quantitative phase-field model and GPU simulations of precipitate growth, splitting, rafting and phase inversion in Ni-base superalloys. His thesis includes the elastic driving-force and sharp-interface derivations. He extended ParaDiS to include precipitate interactions and dislocation climb, and studied interfacial dislocation networks during creep.",
           "works": [
             {
-              "title": "Electrostriction and domain switching near the morphotropic phase region",
-              "url": "https://doi.org/10.1103/PhysRevB.108.134116",
-              "kind": "Paper · 2023"
+              "title": "Interfacial dislocation network in precipitation strengthened alloys during creep: a discrete dislocation dynamics (DDD) study in three dimensions",
+              "url": "https://doi.org/10.1088/1361-651X/abe0a8",
+              "kind": "Paper · 2021"
+            },
+            {
+              "title": "Splitting Instability in Superalloys: A Phase-Field Study",
+              "url": "https://arxiv.org/abs/2401.13151",
+              "kind": "Preprint · 2024"
             }
           ],
           "image": "/assets/images/group/dr-tushar-jogi.png",
